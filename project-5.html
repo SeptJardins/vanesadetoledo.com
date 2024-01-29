@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+  
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto+Slab:wght@100&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+
+    .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    color: white;
+    z-index: 100;
+    border-bottom-right-radius: 40px;
+  }
+
+  .header a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .header a::before {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.5s ease-in-out;
+}
+
+.header a:hover::before {
+  width: 100%;
+  color:rgb(53, 64, 52);  
+}
+
+
+
+    
+   .cover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+   }
+
+   .cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+    .image-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 80px;
+      padding: 20px;
+      margin-top: 700px;
+    }
+
+    .image-column img {
+      width: 60%; /* adjust this value as per your need */
+    }
+
+    
+
+   
+    .footer {
+  flex-direction: row;
+  bottom: 0px;
+  height: 150px;
+  display: flex;
+  gap: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  z-index: 2000;
+  background-color: transparent;
+  border-style: solid;
+  border-top-color: rgb(53, 64, 52);
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+  border-top-width:2px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+
+}
+
+.icon-container {
+  display: flex;
+  flex-direction:column;
+  gap: 10px;
+  height:100px;
+  width:auto;
+  margin-left:80%;
+  margin-top:20px;
+}
+
+.icon-1, .icon-2 {
+  font-size: 30px;
+  color:rgb(53, 64, 52);
+}
+
+  .footer a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    height:100px;
+    width:auto;
+  }
+
+.footer a:first-child {
+    margin-right: 15px;
+    margin-left: 75%;
+  }
+
+  .Logo {
+    margin-top:8px;
+  }
+
+  .Logo img {
+    height: 120px; /* make it bigger */
+    width: auto;
+    position: relative; /* add this to make z-index effective, if needed */
+    z-index: 1500;
+    margin-top: 4px;
+    margin-left: 0px; /* reduce this to avoid pushing the image outside the visible area */
+  
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+.header {
+width: 100%;
+flex-direction: column;
+padding-top: 5px; /* Adjusted top padding */
+font-size: 15px;
+height: auto; /* Let the height be automatic */
+align-items: left; /* Align header items to the center */
+justify-content: left; /* Center the content horizontally */
+text-align: left; /* Center the text within the anchor tags */
+padding-left:10px;
+position:relative;
+}
+
+.header a {
+padding: 5px 0;
+width: 100%;
+}
+
+
+/* Body starts */
+
+.cover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 120vh;
+    object-fit: cover;
+   }
+
+   .cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.image-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 80px;
+      padding: 20px;
+      margin-top: 450px;
+      height:1100px;
+    }
+
+    .image-column img {
+      width: 85%; /* adjust this value as per your need */
+    }
+
+
+
+.project {
+ display: flex;
+ flex-direction: column;
+ margin-top: 30px;   
+ align-items: center; /* Center the items */
+ text-align: center; /* Center the text */
+ width: 80%; /* Set the width of the footer to 80% */
+ margin-left: auto; /* Center the footer horizontally */
+ margin-right: auto; /* Center the footer horizontally */
+ overflow: hidden;
+}
+
+
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  align-items: center;
+  margin-left: 50px;
+  position: relative;
+  display: inline;
+  color:rgb(53, 64, 52);
+  width: 100%;
+  margin:0;
+  }
+
+  
+
+  .project-description a {
+    text-decoration: none;
+    color: inherit; 
+  }
+
+
+.project-description:hover {
+  font-style: italic;
+}
+
+
+
+     /* Adjust each project item container to stack the image above the text */
+.condor,
+.campanilla,
+.jardin-terraza,
+.jardin-casa,
+.jardin-patio {
+display: flex;
+flex-direction: column; /* Stack image and text vertically */
+align-items: center; /* Center both image and text */
+margin-bottom: 1.5rem;
+}
+
+/* Adjust image styling to remove right margin */
+.condor img,
+.campanilla img,
+.jardin-terraza img,
+.jardin-casa img,
+.jardin-patio img {
+width: 100%; /* Make images responsive, they will scale according to the container width */
+height: auto; /* Maintain aspect ratio */
+margin: 0; /* Remove any specific margins to center the images */
+}
+
+
+/* Body finishes */
+
+
+
+.footer {
+  flex-direction: row;
+  bottom: 0px;
+  height: 150px;
+  display: flex;
+  gap: 10px;
+  align-items: right;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  z-index: 2000;
+  background-color: transparent;
+  border-style: solid;
+  border-top-color: rgb(53, 64, 52);
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+  border-top-width:2px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+
+}
+
+.icon-container {
+  display: flex;
+  flex-direction:column;
+  gap: 10px;
+  height:100px;
+  width:auto;
+  margin-top:20px;
+  margin-left:0px;
+  
+}
+
+.icon-1, .icon-2 {
+  font-size: 30px;
+  color:rgb(53, 64, 52);
+  justify-content: left;
+}
+
+  .footer a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    height:100px;
+    width:auto;
+  }
+
+
+
+  .Logo {
+    margin-top:8px;
+    margin-right:0px;
+    margin-left:0px;
+  }
+
+  .Logo img {
+    height: 120px; /* make it bigger */
+    width: auto;
+    position: relative; /* add this to make z-index effective, if needed */
+    z-index: 1500;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+  </style>
+</head>
+
+
+
+<body>
+
+  <div class="header">
+    <a href="http://127.0.0.1:5500/Paisajismo.html">Vanesa de Toledo</a> 
+    <a href="projects.html">proyectos</a> 
+    <a href="about.html">manifiesto</a>
+    </div>
+
+
+
+  <div class="cover-image"> <img src="jardin-patio_files/muro-plantas-recorte.png" alt=""></div>
+  
+  <div class="image-column">  
+    <img src="jardin-patio_files/olivo-patio.jpeg" alt="image 1">
+    <img src="jardin-patio_files/sol-y-patio.JPG" alt="image 2">
+   
+  </div>
+  
+  <div class="footer">
+ 
+    <div class="Logo"> 
+      <img src="Images/Logo-paisajismo-verde-el-que-se-quiere.jpg" alt="">
+    </div>
+  
+    <div class="icon-container">
+      <div class="icon-1">
+        <a href="https://www.instagram.com/vanesadetoledopaisajista/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="icon-2">
+        <a href="mailto:Vanesadetoledo@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
